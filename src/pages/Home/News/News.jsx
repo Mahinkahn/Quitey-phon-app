@@ -11,9 +11,9 @@ const News = () => {
           </div>
           <div className=" text-center">
             <p className=' text-primary'>Explore How Can I Help You</p>
-            <h2 className='text-[42px] font-bold text-white leading-[56px]'>Discover the Value of
+            <h2 className='md:text-[42px] text-2xl font-bold text-white leading-[56px]'>Discover the Value of
             </h2>
-            <h2 className='text-[42px] font-bold text-white leading-[56px]'> Risk Intelligence.</h2>
+            <h2 className='md:text-[42px] text-2xl font-bold text-white leading-[56px]'> Risk Intelligence.</h2>
             <button className="btnPrimary mt-5">Start Free Trial</button>
           </div>
         </div>

@@ -11,6 +11,7 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 import Testi from "../Testimonials/Testi";
 import News from "../News/News";
+import Froms from "../Froms/Froms";
 
 
 
@@ -30,6 +31,7 @@ const Home = () => {
             <Testimonials></Testimonials>
             <Testi></Testi>
             <News></News>
+            <Froms></Froms>
         </div>
     );
 };
