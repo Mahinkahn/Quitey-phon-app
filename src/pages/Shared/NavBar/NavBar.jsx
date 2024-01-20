@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import logo from '../../../assets/images/Rectangle9.png';
-import { GrLanguage } from "react-icons/gr";
+import logo from '../../../assets/icon/Group 374.png';
+
 import { FaXmark, FaBars } from 'react-icons/fa6';
+import { MdPhoneInTalk } from "react-icons/md";
 
 // import link from react scroll
 import { Link } from 'react-scroll';
@@ -22,28 +23,27 @@ const NavBar = () => {
 
     return (
         <>
-            <nav className='bg-white md:px-4 p-4 border-b  max-w-screen-2xl mx-auto text-primary fixed top-0 right-0 left-0'>
+            <nav className='bg-white md:px-4 p-4  mx-auto text-primary fixed top-0 right-0 left-0'>
                 <div className="text-lg container mx-auto flex justify-between items-center">
-                    <div className="flex space-x-14 items-center">
-                        <a href="/" className='text-2xl font-semibold flex items-center space-x-3 text-primary'>
-                            <img src={logo} alt="" className='w-10 inline-block items-center' /> <span>XYZ</span>
+                    <div className="flex  space-x-14 items-center">
+                        <a href="/" className=''>
+                            <img src={logo} alt="" className='w-28 inline-block items-center' />
                         </a>
-
-                        {/* showing navitem using map */}
-                        <ul className='md:flex space-x-12 hidden'>
-                            {
-                                navItems.map(({ link, path }) => <Link activeClass='active' spy={true} smooth={true} offset={-100} key={link} to={path} className='block hover:text-gray-300 cursor-pointer'>{link}</Link>)
-                            }
-                        </ul>
                     </div>
 
                     {/* language and signup */}
                     <div className="space-x-12 hidden md:flex items-center">
-                        <a href="/" className='hidden lg:flex items-center hover:text-secondary'>
-                            <GrLanguage className='mr-2' />
-                            <span>Language</span>
+                        {/* showing navitem using map */}
+                        <ul className='md:flex space-x-12 hidden'>
+                            {
+                                navItems.map(({ link, path }) => <Link activeClass='active' spy={true} smooth={true} offset={-100} key={link} to={path} className='block text-secondary hover:text-primary cursor-pointer'>{link}</Link>)
+                            }
+                        </ul>
+                        <a href="/" className='hidden lg:flex items-center text-secondary hover:text-primary'>
+                            <MdPhoneInTalk className='mr-2' />
+                            <span>+880 1234567895</span>
                         </a>
-                        <button className='bg-secondary py-2 px-4 transition-all duration-300 rounded hover:text-white hover:bg-indigo-600'>Sign up</button>
+                        <button className='gradientBg text-white py-2 px-4 transition-all duration-300 rounded'>Get Started</button>
                     </div>
 
                     {/* menu btn only display on mobile */}

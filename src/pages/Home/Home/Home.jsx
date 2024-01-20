@@ -9,6 +9,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { useEffect } from "react";
 import Aos from "aos";
 import 'aos/dist/aos.css';
+import Testi from "../Testimonials/Testi";
+import News from "../News/News";
 
 
 
@@ -26,6 +28,8 @@ const Home = () => {
             <PopularMenu></PopularMenu>
             <Featured></Featured>
             <Testimonials></Testimonials>
+            <Testi></Testi>
+            <News></News>
         </div>
     );
 };

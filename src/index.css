@@ -2,23 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
 
 body {
-    font-family: 'Jost', sans-serif;
-    
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-nav{
+nav {
     z-index: 10001 !important;
 }
 
-.gradientBg{
-    background: linear-gradient(99deg, #EE9AE5 0%, #5961F9 100%)
+.gradientBg {
+    background: linear-gradient(270deg, #007FFF 26.08%, #FF4D54 116.12%);
 }
 
-.btnPrimary{
-    @apply py-3 px-8 bg-secondary font-semibold text-white rounded hover:bg-primary transition-all duration-300
+.gradient {
+    background: linear-gradient(270deg, #137BF2 11.66%, #FF4D54 70.06%);
+}
+
+.btnPrimary {
+    @apply py-3 px-8 bg-primary hover:bg-secondary font-semibold text-white rounded transition-all duration-300;
+}
+
+.btnPink {
+    @apply py-2 px-4 hover:bg-primary border-primary hover:border-white hover:text-white font-semibold rounded transition-all duration-300;
 }
