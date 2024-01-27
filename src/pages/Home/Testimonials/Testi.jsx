@@ -83,9 +83,7 @@ const Testi = () => {
                     </div>
 
                 </div>
-                <div className="">
 
-                </div>
             </div>
 
         </div>

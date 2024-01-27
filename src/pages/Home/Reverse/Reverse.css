@@ -1,0 +1,11 @@
+.custom-slide {
+    width: 388px;
+    /* Set the card width here */
+    margin-right: 50px;
+    /* Set the gap between slides here (50px in this example) */
+}
+
+.custom-slide:last-child {
+    margin-right: 0;
+    /* Remove margin-right for the last slide to prevent extra spacing */
+}

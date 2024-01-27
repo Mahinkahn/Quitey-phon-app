@@ -1,59 +1,54 @@
-import { Link } from "react-router-dom";
-
+import From from './From';
+import ves from '../../../assets/images/Vector457.png'
+import Reverse from '../Reverse/Reverse';
 
 const Froms = () => {
     return (
 
-        <section className="max-w-4xl p-6 mx-auto bg-[#FFF] rounded-md shadow-md dark:bg-gray-800 mt-20">
-            <h1 className="text-xl font-bold text-[#233D62] capitalize dark:text-white">Get In Touch Now</h1>
-            <form>
-                <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
-                    <div>
+        <div className=""
+            style={{
+                backgroundImage: `url(${ves})`,
+                backgroundPositionY: '80px',
 
-                        <label className="text-[#233D62] dark:text-gray-200" htmlFor="username">First Name<span className="text-[#FF3D55]">*</span></label>
-                        <input id="username" required type="text" placeholder="First Name" className="block w-full px-4 py-3 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
-                    </div>
-                    <div>
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover', // Adjust this based on your design
+                // Add other necessary styles
+            }}
+        >
+            <div className="md:px-14 p-4 max-w-screen-2xl mx-auto my-10"
 
-                        <label className="text-[#233D62] dark:text-gray-200" htmlFor="lastName">Last Name<span className="text-[#FF3D55]">*</span></label>
-                        <input id="lastName" required type="text" placeholder="Last Name" className="block w-full px-4 py-3 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
+            >
+                <div className="md:p-9 px-4 py-9">
+                    <div className=" flex flex-col md:flex-row justify-center gap-28 items-center ">
+                        {/* banner image */}
+                        <div className=" md:w-3/5">
+                            <p className=" text-base text-primary font-bold">Get In touch</p>
+                            <h2 className="md:text-[42px] text-2xl font-bold text-[#233D62] leading-normal">We’re <span style={{
+                                background: 'linear-gradient(270deg, #007FFF 21.64%, #FF4D54 68.77%)',
+                                WebkitBackgroundClip: 'text',
+                                backgroundClip: 'text',
+                                WebkitTextFillColor: 'transparent',
+
+                            }}>Committed to</span></h2>
+                            <h2 className='md:text-[45px] text-2xl font-bold text-[#233D62] leading-normal'>your Success.</h2>
+
+                            <p className=' text-[#485666] text-base md:w-9/12  mt-7 mb-14'>Move from feeling ill-equipped and anxious about imminent catastrophe to outsmarting the bad actors and protecting your organization with confidence.</p>
+
+
+                        </div>
+
+                        {/* banner content */}
+                        <div className="">
+                            <From></From>
+                        </div>
+
                     </div>
 
-                    <div>
-                        <label className="text-[#233D62] dark:text-gray-200" htmlFor="emailAddress">Email*</label>
-                        <input id="emailAddress" required type="email" placeholder="Email Adress" className="block w-full px-4 py-3 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
-                    </div>
-
-                    <div>
-                        <label className="text-[#233D62] dark:text-gray-200" htmlFor="companyName">Company Name<span className="text-[#FF3D55]">*</span></label>
-                        <input id="companyName" required placeholder="Company Name" type="text" className="block w-full px-4 py-3 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
-                    </div>
-
-                    <div>
-                        <label className="text-[#233D62] dark:text-gray-200" htmlFor="phoneNumber">Phone Number*</label>
-                        <input id="phoneNumber" required placeholder="Phone No" type="number" className="block w-full px-4 py-3 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
-                    </div>
-                    <div>
-                        <label className="text-[#233D62] dark:text-gray-200" htmlFor="lastName">How did You Hear About Us?</label>
-                        <input id="lastName" placeholder="Last Name" type="text" className="block w-full px-4 py-3 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
-                    </div>
                 </div>
 
-                <div className="mt-4">
-                    <label className="text-[#233D62] dark:text-gray-200" htmlFor="lastName">Country Reason</label>
-                    <input id="lastName" placeholder="Select Your Country" type="text" className="block w-full px-4 py-4 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
-                </div>
-                <div className="w-full mt-4">
-                    <p className=" text-[#485666]">Quiety will use the information provided to contact you about products & services. You may opt out </p>
-                    <p className="text-[#485666]">of receiving these communications at any time. For more information see Quiety <Link className=" text-primary">Privacy Policy</Link></p>
-                </div>
-
-
-                <div className="mt-6">
-                    <button className="btnPrimary">Start Free Trial</button>
-                </div>
-            </form>
-        </section>
+            </div>
+            <Reverse></Reverse>
+        </div>
 
 
 
