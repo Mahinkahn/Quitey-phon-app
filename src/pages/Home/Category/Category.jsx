@@ -4,6 +4,7 @@ import iconImg from '../../../assets/icon/Icon07.png'
 import vector from '../../../assets/images/Vector 1(1).png'
 import vector2 from '../../../assets/images/Vector 1.png'
 import app from '../../../assets/icon/App.png'
+import './Cata.css'
 
 const Category = () => {
     return (
@@ -27,7 +28,7 @@ const Category = () => {
 
                 <div className=" grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 items-start md:gap-12 gap-8">
 
-                    <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8  hover:translate-y-4 transition-all cursor-pointer">
+                    <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8  hover:translate-y-4 transition-all cursor-pointer  your-component risk-border-hover " >
                         <div className="">
                             <img src={app} alt="" className=' mt-8' />
                             <h5 className=" text-xl font-semibold text-[#233D62] px-3 mt-5">Enterprise</h5>
@@ -37,7 +38,7 @@ const Category = () => {
                         </div>
                     </div>
 
-                    <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8   hover:translate-y-4  cursor-pointer md:mt-16">
+                    <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8   hover:translate-y-4  cursor-pointer risk-border-hover md:mt-16">
                         <div className="">
                             <img src={develImg} alt="" className=' mt-8' />
                             <h5 className=" text-xl font-semibold text-[#233D62] px-3 mt-5">Third Party</h5>
@@ -47,7 +48,7 @@ const Category = () => {
                         </div>
                     </div>
 
-                    <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8  hover:translate-y-4 transition-all cursor-pointer">
+                    <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 risk-border-hover  hover:translate-y-4 transition-all cursor-pointer">
                         <div className="">
                             <img src={icon0Img} alt="" className=' mt-8' />
                             <h5 className=" text-xl font-semibold text-[#233D62] px-3 mt-5">Financial</h5>
@@ -57,7 +58,7 @@ const Category = () => {
                         </div>
                     </div>
 
-                    <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8   hover:translate-y-4  cursor-pointer md:mt-16">
+                    <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 risk-border-hover   hover:translate-y-4  cursor-pointer md:mt-16">
                         <div className="">
                             <img src={iconImg} alt="" className=' mt-8' />
                             <h5 className=" text-xl font-semibold text-[#233D62] px-3 mt-5">Compliance </h5>

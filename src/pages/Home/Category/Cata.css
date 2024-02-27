@@ -1,0 +1,4 @@
+.risk-border-hover:hover {
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) padding-box, linear-gradient(324.79deg, #007FFF -4.77%, #FF4D54 107.43%) border-box;
+    border: 1px solid rgba(0, 0, 0, 0) !important;
+}

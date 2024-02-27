@@ -52,10 +52,11 @@ const Featured = () => {
     ]
 
     return (
-        <div className="md:px-4 p-4 max-w-screen-2xl mx-auto py-10" id="pricing">
+        <div className="md:px-4 p-4 max-w-screen-2xl mx-auto py-10 mt-24" id="pricing">
             <div className=" text-center">
-                <h2 className="md:text-5xl text-3xl font-extrabold text-primary mb-2">Here are all our plans</h2>
-                <p className=" text-tartiary md:w-1/3 mx-auto px-4">A simple paragraph is comprised of three major components. The  which is often a declarative sentence.</p>
+                <p className="text-primary font-bold">Update Resource</p>
+                <h2 className="md:text-5xl text-3xl font-extrabold  mb-2">Risk Management _ <span className="text-[#FF4D54]">News</span></h2>
+                <p className=" text-tartiary md:w-1/2 my-8 mx-auto px-4">As an ISACA member, you’ll gain access to special knowledge resources including our white papers and webinars, and online on-demand training.</p>
 
                 {/* toggle pricing */}
                 <div className="mt-16">

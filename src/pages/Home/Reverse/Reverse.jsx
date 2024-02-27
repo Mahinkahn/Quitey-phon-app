@@ -5,6 +5,7 @@ import './Reverse.css'
 
 
 const Reverse = () => {
+
     const settings = {
         dots: true,
         arrows: false,
@@ -15,6 +16,24 @@ const Reverse = () => {
         autoplaySpeed: 2000,
         pauseOnHover: true,
         variableHeight: true,
+        appendDots: (dots) => (
+            <div style={{ marginBottom: '-20px' }}>
+                <ul style={{ margin: '0', padding: '0' }}>{dots}</ul>
+            </div>
+        ),
+        customPaging: (index) => (
+            <div
+                style={{
+                    width: '30px',
+                    height: '8px',
+                    background: user[index].dotColor || 'linear-gradient(270deg, #007FFF 26.08%, #FF4D54 116.12%)', // Default color if dotColor is not present
+                    borderRadius: '5px',
+                    marginLeft: '5px',
+                    marginRight: '5px',
+                    transition: 'width 0.5s',
+                }}
+            ></div>
+        ),
         responsive: [
             {
                 breakpoint: 1024,

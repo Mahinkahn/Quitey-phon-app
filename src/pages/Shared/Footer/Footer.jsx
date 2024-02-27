@@ -5,7 +5,7 @@ import icon3 from '../../../assets/icon/icon3.png'
 import icon4 from '../../../assets/icon/icon4.png'
 const Footer = () => {
     return (
-        <div className="md:px-14 p-4 max-w-screen-2xl mx-auto py-10 bg-[#010851] rounded-xl text-white">
+        <div className="md:px-14 p-4 mt-28 max-w-screen-2xl mx-auto py-10 bg-[#010851] rounded-xl text-white">
             <div className="my-12 flex flex-col md:flex-row gap-10">
                 <div className="md:w-1/2 space-y-8">
                     <a href="/" className='text-2xl font-semibold flex items-center space-x-3 text-primary'>
